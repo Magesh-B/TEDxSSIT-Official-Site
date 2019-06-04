@@ -7,11 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script language="js" type="text/javascript" src="script.js"></script>
     <meta charset="utf-8">
     <meta name="description" content="TEDxSriSairamIT">
     <meta name="application-name" content="TEDxSriSairamIT 2019">
@@ -19,7 +18,8 @@
     <meta name="keywords" content="TEDx, Sri Sairam Institute of Technology, TEDx events, TEDx2019">
 </head>
 <body>
-
+    <div id="bg-home">
+                  
     <div id="wrapD3Cube">
         <div id="D3Cube">
             <div id="side1"></div>
@@ -30,11 +30,55 @@
             <div id="side6"></div>
         </div>
     </div>
+    <!--<div id="wrapD3Cube">
+            <div id="D3Cube">
+                <div id="side1"></div>
+                <div id="side2"></div>
+                <div id="side3"></div>
+                <div id="side4"></div>
+                <div id="side5"></div>
+                <div id="side6"></div>
+            </div>
+    </div>
+     -->   
+    <!-- Hamburger Menu-->
+    <div class="container-menu Left" onclick="menuFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+    </div>
+    <!--Side Nav Right-->
+    <div id="mySidenav" class="sidenav">
+            <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+            <a href="#">About TED & TEDx</a>
+            <a href="#">Team</a>
+            <a href="#">Speakers</a>
+            <a href="#">Sponsors</a>
+    </div>
+          
+
+
+
+
+
+
+    </div>
     <p style="text-align: center;">
-        <a onclick="turnLeft();">Left</a>
-        <a onclick="turnRight();">Right</a> <br/>
-        <a onclick="flipCube();">Flip</a>
+        <a onclick="check();">Left</a>
+        <a onclick="check();">Right</a> <br/>
+        <a onclick="check();">Flip</a>
     </p>
+    <div class="container">
+        <h1 id="checky">Hidden content</h1>
+    </div>
+
+
+
+
+
+
+
+
 
 </body>
 </html>
