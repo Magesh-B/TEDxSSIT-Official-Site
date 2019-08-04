@@ -1,100 +1,736 @@
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
-    <title>
-        TEDxSriSairamIT
-    </title>
-    <link rel="icon" href="img/favicon.png" type="img/icon" >
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script language="js" type="text/javascript" src="script.js"></script>
+
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8">
-    <meta name="description" content="TEDxSriSairamIT">
-    <meta name="application-name" content="TEDxSriSairamIT 2019">
-    <meta name="author" content="Magesh B">
-    <meta name="keywords" content="TEDx, Sri Sairam Institute of Technology, TEDx events, TEDx2019">
+    <title>TEDxSriSairamIT</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+
+
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <meta name="google-site-verification" content="qY9N1nPKHNo8eliwIe3eGKyiuoEp64BNpv7THLHqGMo" />
+
+
 </head>
-<body>
-    <div id="bg-home">
-                  
-    <div id="wrapD3Cube">
-        <div id="D3Cube">
-            <div id="side1"></div>
-            <div id="side2"></div>
-            <div id="side3"></div>
-            <div id="side4"></div>
-            <div id="side5"></div>
-            <div id="side6"></div>
+
+<body id="top">
+
+    <script>
+        if(confirm("Event registration is now open. Wanna redirect?")) {
+    window.location.href = "./registration/index.html"
+}
+    </script>
+    
+
+
+    <div id="fb-root"></div>
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ta_IN/sdk.js#xfbml=1&version=v3.3"></script>
+
+                
+
+    <!-- header
+    ================================================-->
+    <header class="s-header">
+        
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <!--<img src="https://drive.google.com/uc?export=view&id=1FfAZUbi__z7Ww1Ivs22DVvbEw01_TE1J" alt="Homepage">-->
+                <img src="images/TEDxSriSairamIT.png" alt="Homepage" class="img-responsive">
+            </a>
+        </div>
+
+        <header class="cd-header">
+            <div class="nav-but-wrap">
+              <div class="menu-icon hover-target">
+                <span class="menu-icon__line menu-icon__line-left"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line menu-icon__line-right"></span>
+              </div>					
+            </div>					
+          </div>				
+          </header>
+          
+          <div class="nav">
+          <div class="nav__content">
+            <ul class="nav__list">
+              <li class="nav__list-item" id="in"><a href="#about" class="hover-target">About</a></li>
+              <li class="nav__list-item" id="in"><a href="#works" class="hover-target">Speakers</a></li>
+              <li class="nav__list-item" id="in"><a href="./registration/index.html" class="hover-target">Event Registration</a></li>
+              <li class="nav__list-item"><a href="#" class="hover-target">Team</a></li>
+              <li class="nav__list-item"><a href="#" class="hover-target">Sponsors</a></li>
+              <li class="nav__list-item" id="in"><a href="./blog/index.html" class="hover-target">Blog</a></li>
+              <!--<li class="nav__list-item" id="in"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdeJQACDWSYHo3TOPPIVqo9uqKfD7FRzkaaZ2_batT1H8NIuA/viewform?usp=sf_link" class="hover-target">Talkathon Registration</a></li>-->
+              <li class="nav__list-item" id="in"><a href="#contact-foot" class="hover-target">Contact</a></li>
+            </ul>
+          </div>
+          </div>		
+          
+          
+          <div class='cursor' id="cursor"></div>
+          <div class='cursor2' id="cursor2"></div>
+          <div class='cursor3' id="cursor3"></div>
+        <!--end-->
+
+
+
+
+<!--
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="https://drive.google.com/uc?export=view&id=1FfAZUbi__z7Ww1Ivs22DVvbEw01_TE1J" alt="Homepage">
+            </a>
+        </div>
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="works">Speakers</a></li>
+                    <li><a class="smoothscroll"  href="#clients" title="clients">Sponsers</a></li>
+                    <li><a class="smoothscroll"  href="#clients" title="clients">Blog</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                </ul>
+    
+    
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                    </li>
+                </ul>
+            
+            </div>
+        </nav> -->
+ <!-- end header-nav -->
+             <!-- end header-nav__content -->
+<!--
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+-->
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/mainBG.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3 style="font-style: Gazz;letter-spacing: 2px;">TED<sup style="font-style: bold;">x</sup>SriSairamIT</h3>
+                <h1 style="font-style: Gazz;color: #e62b1e;" class="line-1 anim-typewriter">'TRIALS, TRIBULATIONS, TRIUMPHS'</h1>
+                <h1>A crew of proficient students  striving for a greater cause of propagating ideas echoing a change.
+                    
+                </h1>
+
+                <div class="home-content__buttons">
+                    <!--<a href="#contact-foot" class="smoothscroll btn btn--stroke">
+                        Contact Us
+                    </a>-->
+                    <a href="./registration/index.html" style="text-align: center;" class="btn btn--stroke">Register Now</a>
+                </div>
+
+            </div>
+
+            <div class="home-content__scroll">
+                <!----><a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+
+
+        <ul class="home-social">
+            <li>
+                <a href="https://m.facebook.com/Sairam.TEDx/?tsid=0.6422788319729762&source=result"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/TEDxSriSairamIT?s=17"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+            </li>
+            <li>
+                <a href="https://instagram.com/tedxsrisairamit?igshid=i42ok6xsu9fi"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/tedxsrisairamit"><i class="fa fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+            </li>
+            <!--<li>
+                <a href="#0"><i class="fa fa-envelope" aria-hidden="true"></i><span>Gmail</span></a>
+            </li>-->
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
+
+
+<!--TED-->
+<!--
+<div class="row section-header has-bottom-sep" data-aos="fade-up">
+    <div class="col-full">
+        <h3 class="subhead subhead--dark">Hello There</h3>
+        <h1 class="display-1 display-1--light">TED</h1>
+    </div>
+</div>--> <!-- end section-header -->
+
+<div class="row about-desc" data-aos="fade-up">
+    <div style="font-style: Tw Cen MT Std;" class="col-full">
+        <img src="images/TED.png" width="50%" id="imagesAlign">
+        <p>
+            TED is a non-profit forum which aims to build up a sociable, robust and a sustainable community.
+            They catalyse thinking under the banner “IDEAS WORTH SPREADING”. TED signifies technology, entertainment and design.
+            Speakers from various branches of knowledge share their experience and wisdom. Their words do give life to diverse designs.
+            The speakers get through the spectators and encourage their thoughts ambiguously. It’s purely a gathering that brings fascinating, distinct individuals together.
+            This collaboration germinates new calibre. TED is a major supporting tool as it adapts to gradual evolution of learning.</p>
+    </div>
+</div> <!-- end about-desc -->
+
+
+
+
+<!--End-->
+<!--TEDx-->
+    <!--TED-->
+<!--<div class="row section-header has-bottom-sep" data-aos="fade-up">
+    <div class="col-full">
+        <h3 class="subhead subhead--dark">Hello There</h3>
+        <h1 class="display-1 display-1--light">TED<sup>x</sup></h1>
+    </div>
+</div>-->
+ <!-- end section-header -->
+
+<div class="row about-desc" data-aos="fade-up">
+    <div style="font-style: Tw Cen MT Std;" class="col-full">
+            <img src="images/tedx.png" width="50%" id="imagesAlign">
+        <p>In the spirit of ideas worth spreading, TED<sup>x</sup> is a program of local, self-organized events that bring people 
+            together to share a TED-like experience. At a TED<sup>x</sup> event, TEDTalks video and live speakers combine to spark deep
+             discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event.
+              The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. 
+              (Subject to certain rules and regulations.) 
+            For more information on TEDx,<br> visit <a href="http://www.ted.com/tedx">http://www.ted.com/tedx.</a>
+            </p>
+    </div>
+</div> <!-- end about-desc -->
+
+
+
+
+<!--End-->
+
+
+
+
+<!--End-->
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full"><!--
+                <h3 class="subhead subhead--dark">Hello There</h3>
+                <h1 class="display-1 display-1--light">We Are<br>--><!-- TED<sup style="font-style: bold;">x</sup>SriSairamIT</h1>-->
+        <!---->        <img src="images/TEDxSriSairamIT.png" width="70%">
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row about-desc" data-aos="fade-up">
+            <div style="font-style: Tw Cen MT Std;" class="col-full">
+                <p>
+                    As a source of strength and support to TED, we TED<sup>x</sup>SriSairamIT  work for IDEAS WORTH SPREADING.
+                     It’s a great delight to embark our third annual event. We tend to lay stronger foundations with incredible flair. 
+                     The event unpacks the speaker’s object and leaves a deep imprint amongst our gathering. We try to unlock the moment of every single attendee, that makes their heart sing.
+                    We do endeavour to act as a foundation for inspiration and motivation.We celebrate, empower and cherish the high old time.
+                    If you have any additional questions or inquiries, please contact us at <a>tedxsrisairamit@gmail.com.</a>
+                    </p>
+            </div>
+        </div> <!-- end about-desc -->
+
+
+
+
+        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+                
+            <div class="col-block stats__col ">
+                <div class="stats__count">2</div>
+                <h5>No Of past TED<sup style="font-style: bold;">x</sup> Events</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">200</div>
+                <h5>No of People Attended</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">3</div>
+                <h5>No of Salon events</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">16</div>
+                <h5>No of speakers</h5> 
+            </div>
+
+        </div> <!-- end about-stats -->
+
+        <div class="about__line"></div>
+
+    </section> <!-- end s-about -->
+
+    <div style="margin-left: 0%;margin-right: 0%;" class="resp-container">
+                <iframe class="resp-iframe" src="slideshow/index.html" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+            </div>
+   
+
+    <!-- works
+    ================================================== -->
+    <section id='works' class="s-works" style="background-color: black;">
+
+        <div class="intro-wrap">
+                
+            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">Speakers</h3>
+                    <h1 class="display-2 display-2--light"></h1>
+                </div>
+            </div> <!-- end section-header -->
+
+        </div> <!-- end intro-wrap -->
+
+        <div class="row works-content">
+            <div class="col-full masonry-wrap">
+                <div class="masonry">
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/MajGenHarshaKakar.jpeg" class="thumb-link" title="Maj Gen Harsha Kakar" data-size="1050x700">
+                                    <img src="images/MajGenHarshaKakar.jpeg" 
+                                         srcset="images/MajGenHarshaKakar.jpeg 1x, images/MajGenHarshaKakar.jpeg 2x" alt="">
+                                </a>
+                            </div>
+                        <div id="peru">
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Maj Gen Harsha Kakar<br> Defence
+                                </h3>
+                                <p class="item-folio__cat">
+                                   <!-- Branding-->
+                                </p>
+                            </div>
+                            
+                            <a href="#" class="item-folio__project-link" title="Project link">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>He was the head of department of strategic studies at the College of Defence Management, where he wrote extensively on futuristic planning and enhancing joint operations. He served as part of the United Nations peace keeping operations in Mozambique</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/AmrithaSamant.jpeg" class="thumb-link" title="Amritha Samant" data-size="1050x700">
+                                    <img src="images/AmrithaSamant.jpeg" 
+                                         srcset="images/AmrithaSamant.jpeg 1x, images/AmrithaSamant.jpeg 2x" alt="">
+                                </a>
+                            </div>
+                        <div id="peru">
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Amritha Samant<br> Photographer
+                                </h3>
+                                <p class="item-folio__cat">
+                                   <!-- Branding-->
+                                </p>
+                            </div>
+                            
+                            <a href="#" class="item-folio__project-link" title="Project link">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Here we have our second speaker! Amrita Samant, a passionate child photographer, comprehending motherhood and toddlers. A glimpse of  her snaps reveal the unspoken language of the tiny ones.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/priyankaMohite.jpeg" class="thumb-link" title="Priyanka Mohite" data-size="1050x700">
+                                    <img src="images/priyankaMohite.jpeg" 
+                                         srcset="images/priyankaMohite.jpeg 1x, images/priyankaMohite.jpeg 2x" alt="">
+                                </a>
+                            </div>
+                        <div id="peru">
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Priyanka Mohite<br> Mountaineer
+                                </h3>
+                                <p class="item-folio__cat">
+                                   <!-- Branding-->
+                                </p>
+                            </div>
+                            
+                            <a href="#" class="item-folio__project-link" title="Project link">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Presenting to you our third speaker, Priyanka Mohite. This young mountaineer is the first Indian woman to have scaled Mt.Makalu. She scaled Mt.Everest when she was just 21 years old and other mountains such as Mt Lhotse and Mt.Kilimanjaro subsequently.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/no-profile.png" class="thumb-link" title="Coming Soon" data-size="1050x700">
+                                    <img src="images/no-profile.png" 
+                                         srcset="images/no-profile.png 1x, images/no-profile.png 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Yet to be<br> Revealed
+                                </h3>
+                                <p class="item-folio__cat">
+                                  <!--  Branding-->
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Information about the Speakers will be revealed soon</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/no-profile.png" class="thumb-link" title="Coming Soon" data-size="1050x700">
+                                    <img src="images/no-profile.png" 
+                                         srcset="images/no-profile.png 1x, images/no-profile.png 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Yet to be<br> Revealed
+                                </h3>
+                                <p class="item-folio__cat">
+                                  <!--  Web Design-->
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Information about the Speakers will be revealed soon</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/no-profile.png" class="thumb-link" title="Coming Soon" data-size="1050x700">
+                                    <img src="images/no-profile.png"
+                                         srcset="images/no-profile.png 1x, images/no-profile.png 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Yet to be<br> Revealed
+                                </h3>
+                                <p class="item-folio__cat">
+                                   <!-- Web Design-->
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Information about the Speakers will be revealed soon</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                </div> <!-- end masonry -->
+            </div> <!-- end col-full -->
+        </div> <!-- end works-content -->
+
+    </section> <!-- end s-works -->
+
+
+   <!-- <section id="clients" class="s-clients">
+
+       
+        <div class="row clients-testimonials" data-aos="fade-up">
+            <div class="col-full">
+                <div class="testimonials">
+                    <div class="testimonials__slide">
+                        <h1 style="color:red">BLOG 1</h1>
+                        <p style="color:floralwhite">Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam accusantium ipsum. 
+                        Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.
+                        Excepturi nam cupiditate culpa doloremque deleniti repellat.</p>
+
+                    </div>-->
+                    <!--
+                    <div class="testimonials__slide">
+                        
+                        <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                        Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
+
+                        <img src="images/no-profile.png" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Sundar Pichai</span> 
+                            <span class="testimonials__pos">CEO, Google</span>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonials__slide">
+                        
+                        <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                        Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
+
+                        <img src="images/no-profile.png" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Satya Nadella</span> 
+                            <span class="testimonials__pos">CEO, Microsoft</span>
+                        </div>
+
+                    </div>
+
+                </div> 
+                
+            </div> 
+        </div> 
+
+    </section>-->
+
+
+   
+
+
+    <!-- footer
+    ================================================== -->
+    <footer id="contact-foot">
+
+        <div class="row footer-main">
+
+            <div class="col-six tab-full left footer-desc">
+
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=sri%20sairam%20institute&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.yellowrocketagency.com"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div>
+
+              <!--  <a class="twitter-timeline" data-height="800" data-dnt="true" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/TEDxSriSairamIT?ref_src=twsrc%5Etfw">Tweets by TEDxSriSairamIT</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+-->
+
+            </div>
+
+            <div class="col-six tab-full right footer-subscribe">
+
+                <h4>Get Notified</h4>
+                <p>Be the first to know everything we do, To stay connected and to get regular updates about the upcoming events from us, bridge with us through subscribing..</p>
+
+                <div class="subscribe-form">
+                    <form id="mc-form" class="group" novalidate="true">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                        <input type="submit" name="subscribe" value="Subscribe">
+                        <label for="mc-email" class="subscribe-message"></label>
+                    </form>
+
+                
+                    <ul class="contact-social">
+                        <li>
+                            <a href="https://m.facebook.com/Sairam.TEDx/?tsid=0.6422788319729762&source=result"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/TEDxSriSairamIT?s=17"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/tedxsrisairamit?igshid=i42ok6xsu9fi"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/tedxsrisairamit"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                       <!-- <li>
+                            <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        </li>-->
+                    </ul> <!-- end contact-social -->
+
+
+                </div>
+                
+            <div class="fb-page" data-href="https://www.facebook.com/events/sri-sai-ram-institute-of-technology/tedxsrisairamit/470131323110491/" data-tabs="timeline" data-width="" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+
+            </div>
+
+        </div> <!-- end footer-main -->
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>TED<sup>x</sup>SriSairamIT © 2019</span> 
+                </div>
+<!--
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>-->
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </div>
-    <!--<div id="wrapD3Cube">
-            <div id="D3Cube">
-                <div id="side1"></div>
-                <div id="side2"></div>
-                <div id="side3"></div>
-                <div id="side4"></div>
-                <div id="side5"></div>
-                <div id="side6"></div>
-            </div>
-    </div>
-     -->   
-    <!-- Hamburger Menu-->
-    <div class="container-menu Left" onclick="menuFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-    </div>
-    <!--Side Nav Right-->
-    <div id="mySidenav" class="sidenav">
-            <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-            <a href="#">About TED & TEDx</a>
-            <a href="#">Team</a>
-            <a href="#">Speakers</a>
-            <a href="#">Sponsors</a>
-     <!---Social media icons-->
-     <section>
-        <ul class="social">
-          <li>
-            <a class="ease-all" href="https://m.facebook.com/Sairam.TEDx/?tsid=0.6422788319729762&source=result"><i class="fa fa-facebook"></i><span class="hide-text">Facebook</span></a>
-          </li>
-          <li>
-            <a class="ease-all" href="https://instagram.com/tedxsrisairamit?igshid=i42ok6xsu9fi"><i class="fa fa-instagram"></i><span class="hide-text">Instagram</span></a>
-          </li>
-          <li>
-            <a class="ease-all" href="https://twitter.com/TEDxSriSairamIT?s=17"><i class="fa fa-twitter"></i><span class="hide-text">Twitter</span></a>
-          </li>
-         <li>
-            <a class="ease-all" href="https://www.linkedin.com/company/tedxsrisairamit"><i class="fa fa-linkedin"></i><span class="hide-text">Linked In</span></a>
-          </li>
-        </ul>
-      </section>     
 
-      </div>
-
-
-
-
-    </div>
-    <p style="text-align: center;">
-        <a onclick="check();">Left</a>
-        <a onclick="check();">Right</a> <br/>
-        <a onclick="check();">Flip</a>
-    </p>
-    <div class="container">
-        <h1 id="checky">Hidden content</h1>
-    </div>
-
-
-
-
-
-
-
-
+<!--Pop up script-->
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
 
 </body>
+
 </html>
