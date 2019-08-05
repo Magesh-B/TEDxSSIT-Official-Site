@@ -22,7 +22,6 @@
         $msg3=$_POST["message3"];
         $msg4=$_POST["message4"];
         $driveLink=$_POST["message5"];
-        $food=$_POST["Food"];
 
        
 

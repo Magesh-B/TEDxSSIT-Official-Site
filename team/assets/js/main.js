@@ -42,6 +42,7 @@
 			});
 
 		// Header.
+		
 			$header.each( function() {
 
 				var t 		= jQuery(this),
